@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Wishes 💕</title>
+    
+    <!-- External Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap">
+    
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <!-- Music Control Button -->
+    <div class="music-control" id="musicControl" title="Toggle Music">
+        🎵
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="./Until_I_Found_You.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Question Screen (Initial) -->
+    <div class="question-screen" id="questionScreen">
+        <div class="question-box">
+            <h2>Will You Be My Valentine? 💕</h2>
+            <div class="bubu-dudu-gif">
+                <img src= "./first1.gif" alt="Bubu and Dudu">
+            </div>
+            <div class="button-container">
+                <button class="btn btn-yes" onclick="answerYes()">Yes! 💖</button>
+                <button class="btn btn-no" id="noBtn" onclick="moveNoButton()">No</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Content (Hidden Initially) -->
+    <div class="container" id="mainContent" style="display: none;">
+        <!-- Header -->
+        <div class="header">
+            <h1>Happy Valentine's Day! 💖</h1>
+            <p>You Won My Heart</p>
+        </div>
+        
+        <!-- Bubu Dudu Images Section 1 -->
+        <div class="card">
+            <div class="bubu-dudu-container">
+                <div class="bubu-dudu-img">
+                    <img src="./love.gif" alt="Bubu Dudu Love">
+                </div>
+                <div class="bubu-dudu-img">
+                    <img src="./hugs.gif" alt="Bubu Dudu Hug">
+                </div>
+                <div class="bubu-dudu-img">
+                    <img src="./kiss.gif" alt="Bubu Dudu Kiss">
+                </div>
+            </div>
+            <div class="cute-message">The best things in life are better with you! 🐻💕</div>
+        </div>
+        
+        <!-- Wish Box 1 -->
+        <div class="wish-box">
+            <h2>I Love You Soooo Much!</h2>
+            <p>You fill my little world with so much love, happiness, and endless smiles. Thank you for being the most amazing person in my life!</p>
+        </div>
+        
+        <!-- Tic Tac Toe Section -->
+        <div class="card">
+            <div class="tic-tac-toe">
+                <div class="cell">❤️</div>
+                <div class="cell"></div>
+                <div class="cell">❌</div>
+                <div class="cell">❌</div>
+                <div class="cell">❤️</div>
+                <div class="cell"></div>
+                <div class="cell">❌</div>
+                <div class="cell"></div>
+                <div class="cell">❤️</div>
+            </div>
+            <p style="text-align: center; color: #d81b60; font-weight: 600; margin-top: 20px;">You won my heart! 💕</p>
+        </div>
+        
+        <!-- Questions Section -->
+        <div class="card">
+            <div class="bubu-dudu-container">
+                <div class="bubu-dudu-img">
+                    <img src="./together.gif" alt="Bubu Dudu Together">
+                </div>
+                <div class="bubu-dudu-img">
+                    <img src="./heart.gif" alt="Bubu Dudu Heart">
+                </div>
+            </div>
+            
+            <div class="question-section">
+                <div class="question">What makes you special?</div>
+                <div class="answer">Your smile brightens my darkest days, your laugh is my favorite sound, and your presence makes everything feel like home.</div>
+            </div>
+            
+            <div class="question-section">
+                <div class="question">Why do I love you?</div>
+                <div class="answer">Because you make ordinary moments extraordinary, you understand me like no one else, and loving you feels like the easiest and most natural thing in the world.</div>
+            </div>
+        </div>
+        
+        <!-- Animated Hearts -->
+        <div class="heart-container">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+        
+        <!-- Wish Box 2 -->
+        <div class="wish-box">
+            <h2>Forever & Always</h2>
+            <p>Here's to all our adventures together, all the laughs we share, and all the love that keeps growing every single day. You're my today and all of my tomorrows! 💝</p>
+        </div>
+        
+        <!-- Bubu Dudu Images Section 2 -->
+        <div class="card">
+            <div class="bubu-dudu-container">
+                <div class="bubu-dudu-img">
+                    <img src="./dance.gif" alt="Bubu Dudu Dancing">
+                </div>
+                <div class="bubu-dudu-img">
+                    <img src="./bubu1.gif" alt="Bubu Dudu Love">
+                </div>
+                <div class="bubu-dudu-img">
+                    <img src="./hppy.gif" alt="Bubu Dudu Happy">
+                </div>
+            </div>
+            <div class="cute-message">Every day with you is a special day! 💖</div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>💕 Made with love, just for you 💕</p>
+            <p>Happy Valentine's Day 2026!</p>
+        </div>
+    </div>
+    
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
